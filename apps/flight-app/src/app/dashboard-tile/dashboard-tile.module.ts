@@ -10,13 +10,13 @@ import { DashboardTileComponent } from './dashboard-tile.component';
   exports: [DashboardTileComponent],
   entryComponents: [
     // TODO: Add DashboardTileComponent
-    // DashboardTileComponent
+    DashboardTileComponent
   ]
 })
 export class DashboardTileModule {
   constructor(private injector: Injector) {
     // TODO: Wrap DashboardTileComponent as a web component and register it
-    // const Elm = createCustomElement(DashboardTileComponent, {injector});
-    // customElements.define('dashboard-tile', Elm);
+    const Elm = createCustomElement(DashboardTileComponent, {injector});
+    customElements.define('dashboard-tile', Elm);
   }
 }

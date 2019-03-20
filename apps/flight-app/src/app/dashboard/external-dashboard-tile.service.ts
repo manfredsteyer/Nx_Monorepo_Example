@@ -19,5 +19,10 @@ export class ExternalDashboardTileService {
     //
     // HINT: The goal is to dynamically add this to the end of the body:
     //         <script src="..."></script>
+
+    const script = document.createElement('script');
+    script.src = 'assets/external-dashboard-tile.bundle.js';
+    document.body.appendChild(script);
+
   }
 }

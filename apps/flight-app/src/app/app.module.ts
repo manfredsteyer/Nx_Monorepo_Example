@@ -46,7 +46,7 @@ import { TabsModule } from './shared/tabs/tabs.module';
     BasketComponent
   ],
   schemas: [
-    // Todo: Add this schema: CUSTOM_ELEMENTS_SCHEMA
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]

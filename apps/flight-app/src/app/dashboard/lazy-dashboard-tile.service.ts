@@ -23,7 +23,7 @@ export class LazyDashboardTileService {
     }
 
     const path =
-      'projects/flight-app/src/app/lazy-dashboard-tile/lazy-dashboard-tile.module#LazyDashboardTileModule';
+      'apps/flight-app/src/app/lazy-dashboard-tile/lazy-dashboard-tile.module#LazyDashboardTileModule';
 
     return this.loader
       .load(path)

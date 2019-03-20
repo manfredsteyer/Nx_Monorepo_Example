@@ -61,3 +61,17 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
 // import 'intl/locale-data/jsonp/en';
 
 
+
+
+
+if (window['customElements']) {
+  const script = document.createElement('script');
+  script.src = './assets/webcomponentsjs/custom-elements-es5-adapter.js';
+  document.writeln(script.outerHTML);
+}
+
+if (!window['customElements']) {
+  const script = document.createElement('script');
+  script.src = './assets/webcomponentsjs/bundles/webcomponents-sd-ce.js';
+  document.writeln(script.outerHTML);
+}

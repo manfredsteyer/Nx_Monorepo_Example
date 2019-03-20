@@ -11,9 +11,11 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 })
 export class LazyDashboardTileModule {
   constructor(private injector: Injector) {
+
     const lazyTileCE = createCustomElement(LazyDashboardTileComponent, {
       injector: this.injector
     });
     customElements.define('lazy-dashboard-tile', lazyTileCE);
+
   }
 }
